@@ -1,0 +1,10 @@
+.details,
+.address {
+  display: grid;
+  justify-items: start;
+}
+
+.postcode {
+  min-width: 168.67px;
+  box-sizing: border-box;
+}
