@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario de Registro de Empleados</title>
+    <link rel="stylesheet" href="ejercicio3.css" />
+  </head>
+  <body>
+    <h1>Formulario de Registro de Empleados</h1>
+    <img src="/assets/logomen.png" alt="Logo de la empresa" width="100" />
+    <form action="#" method="post">
+      <div>
+        <input type="radio" id="mr" name="titulo" value="Mr" required />
+        <label for="mr">Mr.</label>
+        <input type="radio" id="mrs" name="titulo" value="Mrs" />
+        <label for="mrs">Mrs.</label>
+        <input type="radio" id="ms" name="titulo" value="Ms" />
+        <label for="ms">Ms.</label>
+      </div>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" maxlength="100" required />
+
+      <label for="ciudad">Ciudad:</label>
+      <input type="text" id="ciudad" name="ciudad" required />
+
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado" required>
+        <option value="Gujarat">Gujarat</option>
+        <!-- Agrega más opciones de estados aquí -->
+      </select>
+
+      <label for="codigoPostal">Código Postal:</label>
+      <input type="text" id="codigoPostal" name="codigoPostal" required />
+
+      <label for="foto">Subir Foto:</label>
+      <input type="file" id="foto" name="foto" />
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
